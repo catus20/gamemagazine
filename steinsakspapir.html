@@ -1,0 +1,64 @@
+<!-- index.html -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<link rel="stylesheet" href="css/main.css"> 
+	<title>Stein saks papir</title> 
+</head> 
+<body> 
+	<div class="topnav"> <!-- Denne div koden med topnav klassen er for å sørge for at alt eg skal ha i navbaren min holder seg i lag - This div with the class topnav stays together -->
+		<a class="active" href="index.html"><i class="fa-solid fa-house"></i> Heim</a> <!-- Denne koden gjer at når eg trykke på heim i topnaven så komme eg til sida index.html, det er og ein i kode her som henter ikonet til heim - This code specifies that if I click heim in the topnav that it redirects me to index.html, theres also an i code here which gets the icon for heim-->
+		<a href="about.html"> <i class="fa-solid fa-user"></i> Om meg</a> <!--Denne koden gjer at når eg trykke på om meg i topnaven så kjem eg til about.html, den henter og ikonet til om meg - This code specifies that if I click om meg it will redirect to about.html, the i code here gets the icon for om meg-->
+	</div>
+	
+
+
+	<section class="game"> 
+		
+	
+
+		<div class="title">Stein saks papir</div> 
+		
+		
+		<div class="score"> 
+			<div class="playerScore"> 
+				<h2>Spelar</h2> 
+				<p class="p-count count">0</p> 
+
+			</div>	 
+			<div class="computerScore"> 
+				<h2>Datamaskin</h2> 
+				<p class="c-count count">0</p> 
+
+			</div> 
+		</div> 
+		
+		<div class="move">Velg!</div> 
+		
+		
+		<div class="movesleft">Rundar igjen: 10 </div> 
+		
+		
+		<div class="options"> 
+			<button class="rock">Stein</button> 
+			<button class="paper">Saks</button> 
+			<button class="scissor">Papir</button>	 
+		</div> 
+		
+		
+		<div class="result"></div> 
+		
+		
+		
+
+	</section> 
+	
+
+	<script src="js/app.js"></script> 
+</body> 
+</html>
