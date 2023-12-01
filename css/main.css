@@ -136,3 +136,18 @@ body{
 .title{ 
 	justify-content: center; 
 }
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px; /* Decreased the gap between cells to 5px */
+}
+.cell {
+	width: 100px;
+	height: 100px;
+	background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	cursor: pointer;
+}
