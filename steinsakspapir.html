@@ -1,64 +1,45 @@
 <!-- index.html -->
-
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8"> 
-	<meta name="viewport"
-		content="width=device-width, 
-				initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<title>Stein saks papir</title> 
 </head> 
 <body> 
-	<div class="topnav"> <!-- Denne div koden med topnav klassen er for å sørge for at alt eg skal ha i navbaren min holder seg i lag - This div with the class topnav stays together -->
-		<a class="active" href="index.html"><i class="fa-solid fa-house"></i> Heim</a> <!-- Denne koden gjer at når eg trykke på heim i topnaven så komme eg til sida index.html, det er og ein i kode her som henter ikonet til heim - This code specifies that if I click heim in the topnav that it redirects me to index.html, theres also an i code here which gets the icon for heim-->
-		<a href="about.html"> <i class="fa-solid fa-user"></i> Om meg</a> <!--Denne koden gjer at når eg trykke på om meg i topnaven så kjem eg til about.html, den henter og ikonet til om meg - This code specifies that if I click om meg it will redirect to about.html, the i code here gets the icon for om meg-->
-		<a href="steinsakspapir.html"> <i class="fa-solid fa-gamepad"></i> Stein saks papir</a> <!--Denne koden gjer at når eg trykke på stein saks papir i topnaven så kjem eg til steinsakspapir.html, den henter og ikonet til stein saks papir - This code specifies that if I click stein saks papir it will redirect to steinsakspapir.html, the i code here gets the icon for stein saks papir-->
+	<div class="topnav">
+		<a href="index.html"><i class="fa-solid fa-house"></i> Heim</a>
+		<a href="about.html"> <i class="fa-solid fa-user"></i> Om meg</a>
+		<a class="active" href="steinsakspapir.html"> <i class="fa-solid fa-gamepad"></i> Stein saks papir</a>
+		<a href="guessthenumber.html"> <i class="fa-solid fa-gamepad"></i> Gjett tallet</a>
 	</div>
 	
-
-
 	<section class="game"> 
-		
-	
-
-		<div class="title">Stein saks papir</div> 
-		
-		
 		<div class="score"> 
 			<div class="playerScore"> 
 				<h2>Spelar</h2> 
 				<p class="p-count count">0</p> 
-
 			</div>	 
 			<div class="computerScore"> 
 				<h2>Datamaskin</h2> 
 				<p class="c-count count">0</p> 
-
 			</div> 
 		</div> 
 		
 		<div class="move">Velg!</div> 
 		
-		
 		<div class="movesleft">Rundar igjen: 10 </div> 
 		
-		
 		<div class="options"> 
-			<button class="rock">Stein</button> 
-			<button class="paper">Saks</button> 
-			<button class="scissor">Papir</button>	 
+			<button class="rock" style="background-color: blueviolet; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; border-radius: 25px; color: white;">Stein</button> 
+			<button class="paper" style="background-color: blueviolet; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; border-radius: 25px; color: white;">Saks</button> 
+			<button class="scissor" style="background-color: blueviolet; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; border-radius: 25px; color: white;">Papir</button>	 
 		</div> 
 		
-		
 		<div class="result"></div> 
-		
-		
-		
-
 	</section> 
-	
 
 	<script src="js/steinsakspapir.js"></script> 
 </body> 
