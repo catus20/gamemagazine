@@ -15,8 +15,10 @@ function checkGuess() {
         restartGame();
     } else if (userGuess < randomNumber) {
         resultMessage.textContent = "Too low! Try again.";
+        
     } else {
         resultMessage.textContent = "Too high! Try again.";
+        
     }
 }
 
